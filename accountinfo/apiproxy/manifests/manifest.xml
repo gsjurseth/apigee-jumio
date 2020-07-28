@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Manifest name="manifest">
+    <Policies>
+        <VersionInfo resourceName="AM.setScanID" version="SHA-512:827fee73542de4fd45d6e497cc3182a016e297a0f24544ff8f2236d0d57fa68f5c232728c62deb155f59367604cd57f6d97c1700aede9d6b8ab93ca6960ead02"/>
+        <VersionInfo resourceName="EV.getID" version="SHA-512:bc9f5e2478e0134dead6bcb46931de22b2b7fc9aa20018a21898a3e510bd86079ec745ad43f9b9bf7cea5409a4446daa74bfc7b8edc132024f6e9b0a791164b8"/>
+        <VersionInfo resourceName="VerifyAPIKey" version="SHA-512:902d53ff3ae4f7cd9083142a85407fe0ec59f38407867ea340d7bafce99cdfa9eb3f1272a4eea75779459c5ebb67a7b876fcec07a8ccb53c2326c7ac7162070f"/>
+        <VersionInfo resourceName="resolveNationalID" version="SHA-512:d02b3383d3de8a80fc94af8777f100d31e153fde5e8194b603e9c40a418ba0a0bc4967566e0a5df973d2d8c9fe9cf51264551efb3028179aa09b2f59c4d59032"/>
+    </Policies>
+    <ProxyEndpoints>
+        <VersionInfo resourceName="default" version="SHA-512:f5e732665660ca7a5afcabce1c93f16ca4210a7d75b8b3c630e81055be8ef83cfeb18f4c8855107387f4666763d6f1e6066cf8b87823fdab7455bad755300209"/>
+    </ProxyEndpoints>
+    <Resources>
+        <VersionInfo resourceName="jsc://resolveNationalID.js" version="SHA-512:44591478509a8513c2a7df1c2a1335c9ae9ee78d4d4f7f255f388830e3c144645e1eeb9e94d79d3e62dcd526261269eca6885fcfff19bb4d6adce384f19b0107"/>
+    </Resources>
+    <SharedFlows/>
+    <TargetEndpoints/>
+</Manifest>

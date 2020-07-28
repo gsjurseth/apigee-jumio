@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revision="1" name="accountInfo">
+    <Basepaths>/idscanmapper</Basepaths>
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1592485675087</CreatedAt>
+    <CreatedBy>gsjurseth@google.com</CreatedBy>
+    <Description></Description>
+    <DisplayName>idscanmapper</DisplayName>
+    <LastModifiedAt>1594641539553</LastModifiedAt>
+    <LastModifiedBy>gsjurseth@google.com</LastModifiedBy>
+    <ManifestVersion>SHA-512:f6beb60e561d87ad266a8db8e9c1740d719d6a4de555e116dbea385bee1190f4c103b05902c3b84068efb9ef5f1f8d2f6271df4f20fc7e5797b8b9b5d38ef171</ManifestVersion>
+    <Policies>
+        <Policy>AM.setScanID</Policy>
+        <Policy>EV.getID</Policy>
+        <Policy>VerifyAPIKey</Policy>
+        <Policy>resolveNationalID</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources>
+        <Resource>jsc://resolveNationalID.js</Resource>
+    </Resources>
+    <Spec></Spec>
+    <TargetServers/>
+    <TargetEndpoints/>
+</APIProxy>

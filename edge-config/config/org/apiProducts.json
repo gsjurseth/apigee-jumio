@@ -1,0 +1,38 @@
+[
+  {
+    "apiResources" : [ "/write" ],
+    "approvalType" : "auto",
+    "attributes" : [  ],
+    "createdAt" : 1535395179323,
+    "createdBy" : "gsjurseth@google.com",
+    "description" : "scopecase-Product for both read and Write",
+    "displayName" : "scopecase-Product-Write",
+    "environments" : [ "prod", "test"  ],
+    "lastModifiedAt" : 1535396902694,
+    "lastModifiedBy" : "gsjurseth@google.com",
+    "name" : "scopecase-ProductWrite",
+    "proxies" : [ "apigee-scopecase"  ],
+    "quota" : "5",
+    "quotaInterval" : "1",
+    "quotaTimeUnit" : "minute",
+    "scopes" : [ "urn:scopecase:write" ]
+  },
+  {
+    "apiResources" : [ "/read" ],
+    "approvalType" : "auto",
+    "attributes" : [  ],
+    "createdAt" : 1535395179323,
+    "createdBy" : "gsjurseth@google.com",
+    "description" : "scopecase-Product for read only",
+    "displayName" : "scopecase-Product-Read",
+    "environments" : [ "prod", "test"  ],
+    "lastModifiedAt" : 1535396902694,
+    "lastModifiedBy" : "gsjurseth@google.com",
+    "name" : "scopecase-ProductRead",
+    "proxies" : [ "apigee-scopecase"  ],
+    "quota" : "5",
+    "quotaInterval" : "1",
+    "quotaTimeUnit" : "minute",
+    "scopes" : [ "urn:scopecase:read" ]
+  }
+]

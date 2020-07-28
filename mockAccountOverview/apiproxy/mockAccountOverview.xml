@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revision="3" name="mockAccountOverview">
+    <Basepaths>/v1/mockaccountoverview</Basepaths>
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1592493152068</CreatedAt>
+    <CreatedBy>gsjurseth@google.com</CreatedBy>
+    <Description></Description>
+    <DisplayName>mockAccountOverview</DisplayName>
+    <LastModifiedAt>1593157232113</LastModifiedAt>
+    <LastModifiedBy>gsjurseth@google.com</LastModifiedBy>
+    <ManifestVersion>SHA-512:28526cee5a9b1eccf824940db0a852fd2fd1872d5b88ee88588bc0c2f035b2788cf8e2a2b0ada46bad305a6a9852738a6765f7dee00b9986553df49cdf3f4edd</ManifestVersion>
+    <Policies>
+        <Policy>AM.setPayload</Policy>
+        <Policy>AMsetAPIKEY</Policy>
+        <Policy>AMsetPubKey</Policy>
+        <Policy>EVgetToken</Policy>
+        <Policy>KVM.getPrivKey</Policy>
+        <Policy>VerifyAPIKey</Policy>
+        <Policy>VerifyJWT</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources/>
+    <Spec></Spec>
+    <TargetServers/>
+    <TargetEndpoints/>
+</APIProxy>

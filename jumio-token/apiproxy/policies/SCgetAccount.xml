@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ServiceCallout async="false" continueOnError="false" enabled="true" name="SCgetAccount">
+    <DisplayName>SC.getAccount</DisplayName>
+    <Properties/>
+    <Request clearPayload="true" variable="myRequest">
+        <Add>
+            <Headers>
+                <Header name="apikey">{private.apigee_client_id}</Header>
+            </Headers>
+        </Add>
+        <Set>
+            <Path>/{idType}/{id}</Path>
+        </Set>
+        <IgnoreUnresolvedVariables>false</IgnoreUnresolvedVariables>
+    </Request>
+    <Response>accountsResponse</Response>
+    <LocalTargetConnection>
+        <Path>/v1/accounts</Path>
+    </LocalTargetConnection>
+</ServiceCallout>

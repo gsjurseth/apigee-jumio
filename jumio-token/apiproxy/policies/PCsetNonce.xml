@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PopulateCache async="false" continueOnError="false" enabled="true" name="PCsetNonce">
+    <DisplayName>PC.setNonce</DisplayName>
+    <Properties/>
+    <CacheKey>
+        <KeyFragment ref="transactionReference"/>
+    </CacheKey>
+    <CacheResource>jumio</CacheResource>
+    <Scope>Exclusive</Scope>
+    <ExpirySettings>
+        <TimeoutInSec>60</TimeoutInSec>
+    </ExpirySettings>
+    <Source>nonceValue</Source>
+</PopulateCache>

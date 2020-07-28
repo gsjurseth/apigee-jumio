@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage async="false" continueOnError="false" enabled="false" name="AMsetPrivateKey">
+    <DisplayName>AM.setPrivateKey</DisplayName>
+    <Properties/>
+    <AssignVariable>
+        <Name>private.privatekey</Name>
+        <Value>
+            -----BEGIN RSA PRIVATE KEY-----
+Proc-Type: 4,ENCRYPTED
+DEK-Info: DES-EDE3-CBC,1BFD44A98CAAF56A
+
+
+nprtxjYSl8bGYc0B15ZWxDa5XvCPuQx+OaTT9o1wtlq1QxUNfm8yCHwxq+n7KgBm
+CAgAZ11M3f+NlMS76+yZOeKzf55y7332IqsEZIjZpN2OXb6lg1ICM3D0UcN3lHdk
+AsC4bBPddFCNmYcWpPXtXRQyaTraNep6tjRItj8gsaTaZEYPLY6Yes1SuBNGlSkL
+w8s2dWyTY/wxfsyW1LJtYscLnh7XIHqv03JakUgpSsl2PDzxsEHFgC01BtG2WpWM
+/D+h4i/Q/oa6VosEke48IgJQSvCwGvqc0QAE5TQv7c2oZURbZbS1MXKILFsfak9Q
+3CML9P+HveQ+MahJwjlwNEVZRmjTOyfFsthSRxZwhYpxxfsqHLjnYLHCBRhtLg5i
+b6MLbwXpOTuYwvPVfxEI5lT6ZdHnxhspjQoV95SQebj+5NZf2xhO3jNIgORTM5AM
+n9a4s3HnLoo1thN2lAuoZymWLMITVQbw4jElfcFMHog3sssIpKS/tMgeKtMs6Yxf
+jhMhac2IOPDVx5v/6y9eDnQlCimLSm5uDNV4+m/sOso2Zh6YFUp6ByPoK1x9Hv5h
+kewOI70d/p22iOhW/YzVktNwUcYk548tsUCdWXYjTxzSKG2RZhNMvCggQRUM3qoH
+9tlMVBjIHzH5Mh+ko6WugCOfN22x0uvl2YAnkgT7oCWZ0a1ZK9iVDb1kSjjpFu+1
+M0t0D4oqeVtnmA+9RQYV4TahadJtj71v+EjKJtRh+CpJeYwRSE6uSv8zlHwcR/Y5
+nWReJBs0cSGWYJPXqw2yYTVZv7Rzdw/h0A5HK7MCkHFf/BRqbrVMaeFYJuPHwZOH
+svnqyHpnkHgfCAwBXhcLHQLh4uZC1LF4Qfs6y8fb/mEQMFZRakut7yBdzh9dHt1a
+tuN64iXydn+kyzbBIcLxCIs4cS9QfUvWtXwS0w9eidx4cqs02046SZC6uYV1agxF
+2MEG4i1FCyRXJLOQpa0WcWrHzPMGLBpCPHe0NgDm1hgSj7HLkLuYkEL4WAcZ5gPU
+60pa6og1WolmLgqYOH+blypB/gxRSxFB0cCir/09S7ppd9FX8n1pQSt8D22xZ6is
+42hR4Fu4JBQaxCBunkgaAU/ozwE/fEstTB+BdPuid8wsCTtd9QyHJ60ZjYTm2dF0
++0nED8Oj5N3dcAX8YHZWBo+DT2+n7WcViTR3Q1tNG4bjE1+krJyYcGSeLFWcxaZp
++Zh6/bxV/+oV2uM2Q0tWZaoyTwz65iQ1QeTZzqj3vEVM8peXZDVFb6AA8buu6jFq
+4/pAe4RqUH0zumnXBnDmW/fDUPSIbHCCn+aeqNDOTVYtzWiwZegHmcGR3mc+brfv
+Pa3MGXsMQPhqHW+tVSc6jn8sxCaFS5vYkweDUTNZMfoCLG9ajQOMQksicv+pTLrH
+uKIfciKPYAgBM4IG1Q9TG+7LR2DMCnbg0fuzrqldX/07DsdVX270JphLAidsqTNq
++1xaZOXvSn7mnHW8Syjf5dK2dBSbhp8WCTVOj4B+huKhS+qcnxSMyS2QjVh1Qpq1
+cxPb0DpiPJ49ZNwW5x+GpB71W0rCAuk19/ZIIeTg7rqvc/tOwd0kFAoCAcfyjYYf
+-----END RSA PRIVATE KEY-----
+        </Value>
+        <Ref/>
+    </AssignVariable>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+</AssignMessage>

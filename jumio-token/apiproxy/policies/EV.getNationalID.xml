@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ExtractVariables async="false" continueOnError="false" enabled="true" name="EV.getNationalID">
+    <DisplayName>EV.getNationalID</DisplayName>
+    <Properties/>
+    <URIPath name="name"/>
+    <JSONPayload>
+        <Variable name="id">
+            <JSONPath>$.id</JSONPath>
+        </Variable>
+        <Variable name="idType">
+            <JSONPath>$.idType</JSONPath>
+        </Variable>
+    </JSONPayload>
+</ExtractVariables>

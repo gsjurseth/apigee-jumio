@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Manifest name="manifest">
+    <Policies>
+        <VersionInfo resourceName="AM.returnToken" version="SHA-512:fef44be08a74863462d96212965f652fffa169be0b5e736949f9cd2106dd1293802ec40548a7d614303d79604d7dde721ee148719d60126a32b36f2359c2f6a9"/>
+        <VersionInfo resourceName="AM.setResponse" version="SHA-512:a67488b9a2d520bdc7ab29bbb6e36c5cc5d80efa7c6ab6fd0f707dd6bd984adf9898c2d796e5ca85600bd1f87329d141598b9ec4fd2a880ba3f31af021ecc51b"/>
+        <VersionInfo resourceName="AMsetPrivateKey" version="SHA-512:48d50e455399ea63ddc82fca76b699c68bdfb58860c5a1378635be328335284a34f387b854c2f66ab2d3ab080eff6053baa2123c4eb756eaa4e5d19b65dae73f"/>
+        <VersionInfo resourceName="BasicAuth" version="SHA-512:869e3363370f98270d74f95655ebd70020f00e3346278883564d8295a9bd8841a9566dce7aa488501e9f54596a650c4f92bf060e59222dfa8eff97a94e5a6fa6"/>
+        <VersionInfo resourceName="EV.getNationalID" version="SHA-512:c6fc9523312203297cdfd910519bca06c1b0a7a5768effbdc8bbe9ac94998dbf79d23e115d0ce0c449419eb245feea8f95a3c84cd18e6ebf601e01c84cc3c883"/>
+        <VersionInfo resourceName="EV.getNonce" version="SHA-512:cc4f5f934205b0f07b7b6caf9fe9faad3dae6aa34b00ca360a061a336641928e120302cd19279943d33eb34f32a443b11a2613c99d4fbbab7a1cbefd59434ed1"/>
+        <VersionInfo resourceName="EV.getRedirect" version="SHA-512:47364092b9835fd25b0ed8ec4b711a525dc45b09ed5a8516c460c677bd07acaa24e1b442dd57a46706b325ba27d11bcc8d90c30ff032773464296e05809f85bd"/>
+        <VersionInfo resourceName="EV.getScanID" version="SHA-512:b39bf3f0680d4212270969a54a70600b68431793e403c2d927168305f4ca18fa958a2632e21e12e6fe0673e0dc64a193826a65f96ffd2a28666ddf387ddcfaf9"/>
+        <VersionInfo resourceName="EVgetAccountDetails" version="SHA-512:a2c2d41e1d5aac9fb060fc882ce3dacbfbcea4bc1b95eb3f8f81df5a85b15e0715ef241ca78980f7ca02c28a4b4169064d0c61c0d30ca6236786e44d6c9e1de3"/>
+        <VersionInfo resourceName="EVgetAuthResult" version="SHA-512:01292fb83618d323f4c9476be8f4efb4a0bfc4a73f1f7d27b49a25a8c87117756908fca6806bac6c7526b98af5542403dd05ec125647ee7e08ba3b1968a78585"/>
+        <VersionInfo resourceName="GenerateJWT" version="SHA-512:0d16eb69c1cd95a602cdd1f99d5188ac338eeeccc848b28ec82ec23173a71a581b8b5f2baf6a94035cd41f0488abcf2978d0be89559d5bf6b0f5a182d42150e2"/>
+        <VersionInfo resourceName="InvalidateCache" version="SHA-512:56dd633dedf2124a99c0bc31797c49b5ebd44e77dee381e1189022f72ecf3bac566f5cdefceaea34d7287ed7af27983121b3f8cad22e1baa53ab9a50ed6e959d"/>
+        <VersionInfo resourceName="KVM.getJumioCreds" version="SHA-512:367cf382d09bf99f31d5b8aca241a7b7a4122ec4a7512ca0310af81fcd7e83319b1ce360e0525e70a0633c5bcbdffd83ab592cff6d318ccd3b2d1d516249100d"/>
+        <VersionInfo resourceName="KVM.getPrivKey" version="SHA-512:08a67829bfdbebed126f546868804ea1636ede7876db67f9599c16e62da3a3f79a79eb389f611a8bc7cdde0a6883233ea0b50e8b69fbbf7f07236e556d46254b"/>
+        <VersionInfo resourceName="LClookupNonce" version="SHA-512:6d82117b260766384c92a8f8df1045242f2125fc0ab3c364e2c65e16dc6ec1f5068a301394834b428e781bb05873cb47cc3a9320d529bcbd393fdac41d7a1793"/>
+        <VersionInfo resourceName="PCsetNonce" version="SHA-512:ba5200eefbf849c0220f48ee6f9d943782d53f749aac1480a5a747813aaa61ff112201caa6b95941a1265474424bb26d06c55a1ff83f083c7b70d7a2b81f256f"/>
+        <VersionInfo resourceName="RF.failedAuth" version="SHA-512:90915683f13fc3ddb9b9c0de18b512d674c9253aaa49a9ffa5068166223ae158b9d45fc04156c9d84cb8f956512e24f3adc5d2280486ba5c881d4084a2fd66b4"/>
+        <VersionInfo resourceName="RaiseFault.badRequest" version="SHA-512:d81b6da0acb95710e5291653037d6164b22adee32e24bfd374c60e21c35b8cedb6f5f48acaa557e88ea7b662a6802b5fae83946fe3446afdda0f232cadb1a38d"/>
+        <VersionInfo resourceName="RaiseFaultprocessing" version="SHA-512:6585a60bae3140779473a8a428f1aaee58d383345070a4cf6466f48b35f07660b9cb4e4d1c265b05ba66e9fc8b38b0cfd1a534c666972a8c23821181f04ef4ee"/>
+        <VersionInfo resourceName="SC.initiateAuth" version="SHA-512:83bf9da99b9deccb4dce9676ebc13745efce6f8dce01862ec11057c79dbe3def5436b7ce9a0baf47a91e37932f0c998e991f656ba7acc2e66442783d45266359"/>
+        <VersionInfo resourceName="SCgetAccount" version="SHA-512:ce10e70ac8e9bbdbc1a6fd43574fd2c82c426078a50e386b9133cfc95f64da9967281ab97f2636cae306bba7fb7134ed9621c7eb7323f2689743c3df3b3522be"/>
+        <VersionInfo resourceName="SCmapNIDtoScanID" version="SHA-512:5bb63308f563847a7e90091a6fabe6a5271a5b439d11ae905503777da3d6942294fad86a6fb6456358b5e7945e5d6ee98457b1c1b24e1c507baa59bda34d5e16"/>
+        <VersionInfo resourceName="SCverifyLogin" version="SHA-512:f832c48d99ed5200a6abffe99b94caa041a469194e342c7bf3f8719f667618c3791ca4ffd079426aa22bb6bed6e07a10d52965826cfc9b8d3ef3ed50d9eaf44e"/>
+        <VersionInfo resourceName="add-cors" version="SHA-512:f646e3a11691aaca4b1d76d7095d6dda274c457b729432b777798a14cc76a8c1e2151cca32954225ad5370fe90a7157ad77e54fb7b7a2780d214d1734cf69bd0"/>
+        <VersionInfo resourceName="checkTID" version="SHA-512:ecd9fc48f3fe880ac7e3d824990c81c219c19918641f0edc84d9596bdf0c6cabf582ff8d0e842bfcbac416a0da51c1460450f62a92be7cb6a24b64c77edf4551"/>
+        <VersionInfo resourceName="gimmeNonce" version="SHA-512:d14f373f15602ec081cc99f93e27487b02f1813370e99c47bbd5db9863811ee4f9c291a3985f5b887d4824a114ebd5aaa3dae9be0eeb9718bcf6bc95d425a8d4"/>
+    </Policies>
+    <ProxyEndpoints>
+        <VersionInfo resourceName="default" version="SHA-512:3ec93dc6b56c8429b2e50ac540ed8cbd5bf941f26b6a40a8d7b339d7b1a8d2ab1cc5c94b5c37b6b320ac5ca65494bafc3b3b81c6b75bac14aaf1d1bbee0e9c30"/>
+    </ProxyEndpoints>
+    <Resources>
+        <VersionInfo resourceName="jsc://checkTID.js" version="SHA-512:5ba9f4a9664a373c582b348f2e284950ddc29830f3186de888f17fd0c494c71a05bd5d6587eec69fc9d8baad2041cd84c96a1b90396e27ca093ae293380cbcb0"/>
+        <VersionInfo resourceName="jsc://gimmeNonce.js" version="SHA-512:069df8f0a6079be1ccc61b7eba939b323950e6c199108a6323ccbeafc8752603f1943231bae28b3d32cf0a9e93cf97d25b1a062a50ee8e999ae13d0226606fd1"/>
+    </Resources>
+    <SharedFlows/>
+    <TargetEndpoints/>
+</Manifest>

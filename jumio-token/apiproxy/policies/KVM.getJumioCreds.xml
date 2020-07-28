@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<KeyValueMapOperations async="false" continueOnError="false" enabled="true" name="KVM.getJumioCreds" mapIdentifier="jumio">
+    <DisplayName>KVM.getJumioCreds</DisplayName>
+    <Properties/>
+    <ExclusiveCache>false</ExclusiveCache>
+    <ExpiryTimeInSecs>300</ExpiryTimeInSecs>
+    <Get assignTo="private.apigee_client_id" index="1">
+        <Key>
+            <Parameter>apigee_client_id</Parameter>
+        </Key>
+    </Get>
+    <Get assignTo="private.username" index="1">
+        <Key>
+            <Parameter>clientid</Parameter>
+        </Key>
+    </Get>
+    <Get assignTo="private.password" index="1">
+        <Key>
+            <Parameter>secret</Parameter>
+        </Key>
+    </Get>
+    <Scope>environment</Scope>
+</KeyValueMapOperations>

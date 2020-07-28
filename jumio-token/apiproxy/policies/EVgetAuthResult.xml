@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ExtractVariables async="false" continueOnError="false" enabled="true" name="EVgetAuthResult">
+    <DisplayName>EV.getAuthResult</DisplayName>
+    <Properties/>
+    <JSONPayload>
+        <Variable name="authResult">
+            <JSONPath>$.transactionResult</JSONPath>
+        </Variable>
+    </JSONPayload>
+    <Source clearPayload="false">calloutResponse</Source>
+</ExtractVariables>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<KeyValueMapOperations async="false" continueOnError="false" enabled="false" name="KVM.getPrivKey" mapIdentifier="jumio">
+    <DisplayName>KVM.getPrivKey</DisplayName>
+    <Properties/>
+    <ExclusiveCache>false</ExclusiveCache>
+    <ExpiryTimeInSecs>10</ExpiryTimeInSecs>
+    <Get assignTo="private.publickey">
+        <Key>
+            <Parameter>privatekey</Parameter>
+        </Key>
+    </Get>
+    <Get assignTo="private.client_id">
+        <Key>
+            <Parameter>client_id</Parameter>
+        </Key>
+    </Get>
+    <Scope>environment</Scope>
+</KeyValueMapOperations>

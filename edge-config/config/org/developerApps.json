@@ -1,0 +1,12 @@
+{
+  "john.doe@acme.com": [{
+    "apiProducts" : [ "scopecase-ProductWrite", "scopecase-ProductRead" ],
+    "name" : "ScopeCaseReadWriteApp",
+    "scopes": []
+  },
+  {
+    "apiProducts" : [ "scopecase-ProductRead" ],
+    "name" : "ScopeCaseReadOnlyApp",
+    "scopes": []
+  }]
+}

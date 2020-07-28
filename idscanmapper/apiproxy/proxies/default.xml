@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ProxyEndpoint name="default">
+    <PreFlow name="PreFlow">
+        <Request>
+            <Step>
+                <Name>VerifyAPIKey</Name>
+            </Step>
+        </Request>
+        <Response/>
+    </PreFlow>
+    <Flows>
+        <Flow name="id">
+            <Description/>
+            <Request>
+                <Step>
+                    <Name>EV.getID</Name>
+                </Step>
+            </Request>
+            <Response>
+                <Step>
+                    <Name>resolveNationalID</Name>
+                </Step>
+                <Step>
+                    <Name>AM.setScanID</Name>
+                </Step>
+            </Response>
+            <Condition>(proxy.pathsuffix MatchesPath "/{idType}/{id}") and (request.verb = "GET")</Condition>
+        </Flow>
+    </Flows>
+    <PostFlow name="PostFlow">
+        <Request/>
+        <Response/>
+    </PostFlow>
+    <HTTPProxyConnection>
+        <BasePath>/idscanmapper</BasePath>
+        <VirtualHost>gateway</VirtualHost>
+    </HTTPProxyConnection>
+    <RouteRule name="CORS">
+        <Condition>request.verb == "OPTIONS" AND request.header.origin != null AND request.header.Access-Control-Request-Method != null</Condition>
+    </RouteRule>
+    <RouteRule name="noroute"/>
+</ProxyEndpoint>

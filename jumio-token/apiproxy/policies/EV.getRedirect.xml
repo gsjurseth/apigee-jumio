@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ExtractVariables async="false" continueOnError="false" enabled="true" name="EV.getRedirect">
+    <DisplayName>EV.getRedirect</DisplayName>
+    <Properties/>
+    <JSONPayload>
+        <Variable name="redirect">
+            <JSONPath>$.redirectUrl</JSONPath>
+        </Variable>
+        <Variable name="transactionReference">
+            <JSONPath>$.transactionReference</JSONPath>
+        </Variable>
+    </JSONPayload>
+    <Source clearPayload="false">calloutResponse</Source>
+</ExtractVariables>

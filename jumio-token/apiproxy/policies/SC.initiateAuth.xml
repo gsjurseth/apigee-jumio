@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ServiceCallout async="false" continueOnError="false" enabled="true" name="SC.initiateAuth">
+    <DisplayName>SC.initiateAuth</DisplayName>
+    <Properties/>
+    <Request clearPayload="true" variable="myRequest">
+        <IgnoreUnresolvedVariables>false</IgnoreUnresolvedVariables>
+        <Add>
+            <Headers>
+                <Header name="accept">application/json</Header>
+                <Header name="User-Agent">GeirsApigeeTesting</Header>
+                <Header name="Authorization">{jumioAuthorization}</Header>
+            </Headers>
+        </Add>
+        <Set>
+            <Verb>POST</Verb>
+            <Payload contentType="application/json">{SCBody}</Payload>
+            <Path>/api/authentication/v1/web/initiate</Path>
+        </Set>
+    </Request>
+    <Response>calloutResponse</Response>
+    <HTTPTargetConnection>
+        <Properties/>
+        <URL>https://lon.netverify.com</URL>
+    </HTTPTargetConnection>
+</ServiceCallout>

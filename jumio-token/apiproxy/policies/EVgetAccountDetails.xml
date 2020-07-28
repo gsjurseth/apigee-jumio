@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ExtractVariables async="false" continueOnError="false" enabled="true" name="EVgetAccountDetails">
+    <DisplayName>EV.getAccountDetails</DisplayName>
+    <JSONPayload>
+        <Variable name="fname">
+            <JSONPath>$.accountInfo.FirstName</JSONPath>
+        </Variable>
+        <Variable name="lname">
+            <JSONPath>$.accountInfo.LastName</JSONPath>
+        </Variable>
+        <Variable name="accountno">
+            <JSONPath>$.accountInfo.accountno</JSONPath>
+        </Variable>
+    </JSONPayload>
+    <Source clearPayload="false">accountsResponse</Source>
+</ExtractVariables>

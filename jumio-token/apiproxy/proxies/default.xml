@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ProxyEndpoint name="default">
+    <FaultRules>
+        <FaultRule name="bad_request">
+            <Step>
+                <Name>RaiseFault.badRequest</Name>
+            </Step>
+            <Condition>(fault.errorCode = "steps.servicecallout.ExecutionFailed")</Condition>
+        </FaultRule>
+    </FaultRules>
+    <DefaultFaultRule name="DefaultFaultRule">
+        <Step>
+            <Name>add-cors</Name>
+        </Step>
+        <AlwaysEnforce>true</AlwaysEnforce>
+    </DefaultFaultRule>
+    <PreFlow name="PreFlow">
+        <Request/>
+        <Response>
+            <Step>
+                <Name>add-cors</Name>
+            </Step>
+        </Response>
+    </PreFlow>
+    <Flows>
+        <Flow name="OptionsPreFlight">
+            <Request/>
+            <Response>
+                <Step>
+                    <Name>add-cors</Name>
+                </Step>
+            </Response>
+            <Condition>request.verb == "OPTIONS" AND request.header.origin != null AND request.header.Access-Control-Request-Method != null</Condition>
+        </Flow>
+        <Flow name="start">
+            <Description/>
+            <Request>
+                <Step>
+                    <Name>KVM.getJumioCreds</Name>
+                </Step>
+                <Step>
+                    <Name>BasicAuth</Name>
+                </Step>
+                <Step>
+                    <Name>EV.getNationalID</Name>
+                </Step>
+                <Step>
+                    <Name>SCmapNIDtoScanID</Name>
+                </Step>
+                <Step>
+                    <Name>EV.getScanID</Name>
+                </Step>
+                <Step>
+                    <Name>gimmeNonce</Name>
+                </Step>
+                <Step>
+                    <Name>SC.initiateAuth</Name>
+                </Step>
+                <Step>
+                    <Name>EV.getRedirect</Name>
+                </Step>
+                <Step>
+                    <Name>PCsetNonce</Name>
+                </Step>
+            </Request>
+            <Response>
+                <Step>
+                    <Name>AM.setResponse</Name>
+                </Step>
+            </Response>
+            <Condition>(proxy.pathsuffix MatchesPath "/start") and (request.verb = "POST")</Condition>
+        </Flow>
+        <Flow name="token">
+            <Description/>
+            <Request>
+                <Step>
+                    <Name>EV.getNonce</Name>
+                </Step>
+                <Step>
+                    <Name>LClookupNonce</Name>
+                </Step>
+                <Step>
+                    <Name>checkTID</Name>
+                </Step>
+                <Step>
+                    <Name>KVM.getJumioCreds</Name>
+                </Step>
+                <Step>
+                    <Name>BasicAuth</Name>
+                </Step>
+                <Step>
+                    <Name>SCverifyLogin</Name>
+                </Step>
+                <Step>
+                    <Name>EVgetAuthResult</Name>
+                </Step>
+                <Step>
+                    <Name>RaiseFaultprocessing</Name>
+                    <Condition>((authResult == "CREATED") || (authResult == "STARTED")) </Condition>
+                </Step>
+                <!--                <Step>
+                    <Name>RF.failedAuth</Name>
+                    <Condition>((isValid = "false") and (authResult != "PASSED"))</Condition>
+                </Step> -->
+                <Step>
+                    <Name>RaiseFault.badRequest</Name>
+                    <Condition>((isValid == "false") || (authResult != "PASSED"))</Condition>
+                </Step>
+                <Step>
+                    <Name>InvalidateCache</Name>
+                </Step>
+            </Request>
+            <Response>
+                <Step>
+                    <Name>SCgetAccount</Name>
+                </Step>
+                <Step>
+                    <Name>EVgetAccountDetails</Name>
+                </Step>
+                <Step>
+                    <Name>KVM.getPrivKey</Name>
+                </Step>
+                <Step>
+                    <Name>GenerateJWT</Name>
+                </Step>
+                <Step>
+                    <Name>AM.returnToken</Name>
+                </Step>
+            </Response>
+            <Condition>(proxy.pathsuffix MatchesPath "/token") and (request.verb = "POST")</Condition>
+        </Flow>
+    </Flows>
+    <PostFlow name="PostFlow">
+        <Request/>
+        <Response/>
+    </PostFlow>
+    <HTTPProxyConnection>
+        <BasePath>/v1/jumio</BasePath>
+        <VirtualHost>gateway</VirtualHost>
+    </HTTPProxyConnection>
+    <RouteRule name="CORS">
+        <Condition>request.verb == "OPTIONS" AND request.header.origin != null AND request.header.Access-Control-Request-Method != null</Condition>
+    </RouteRule>
+    <RouteRule name="noroute"/>
+</ProxyEndpoint>

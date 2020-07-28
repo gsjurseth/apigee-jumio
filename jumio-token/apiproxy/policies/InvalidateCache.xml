@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<InvalidateCache async="false" continueOnError="false" enabled="true" name="InvalidateCache">
+    <DisplayName>InvalidateCache</DisplayName>
+    <Properties/>
+    <CacheKey>
+        <KeyFragment ref="tid"/>
+    </CacheKey>
+    <CacheResource>jumio</CacheResource>
+    <Scope>Exclusive</Scope>
+</InvalidateCache>

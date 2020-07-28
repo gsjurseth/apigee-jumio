@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revision="4" name="jumio">
+    <Basepaths>/v1/jumio</Basepaths>
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1592207574785</CreatedAt>
+    <CreatedBy>gsjurseth@google.com</CreatedBy>
+    <Description></Description>
+    <DisplayName>jumio</DisplayName>
+    <LastModifiedAt>1593099264384</LastModifiedAt>
+    <LastModifiedBy>gsjurseth@google.com</LastModifiedBy>
+    <ManifestVersion>SHA-512:e212161ab466f5ece9bfa8aaca21f0192e5e1ddaf9a263ea360d5be8660ca38a61e258ade13f0cfababc16e29a030392deedac28c749b7c0beaace1c11c0bfe2</ManifestVersion>
+    <Policies>
+        <Policy>AM.returnToken</Policy>
+        <Policy>AM.setResponse</Policy>
+        <Policy>AMsetPrivateKey</Policy>
+        <Policy>BasicAuth</Policy>
+        <Policy>EV.getNationalID</Policy>
+        <Policy>EV.getNonce</Policy>
+        <Policy>EV.getRedirect</Policy>
+        <Policy>EV.getScanID</Policy>
+        <Policy>EVgetAccountDetails</Policy>
+        <Policy>EVgetAuthResult</Policy>
+        <Policy>GenerateJWT</Policy>
+        <Policy>InvalidateCache</Policy>
+        <Policy>KVM.getJumioCreds</Policy>
+        <Policy>KVM.getPrivKey</Policy>
+        <Policy>LClookupNonce</Policy>
+        <Policy>PCsetNonce</Policy>
+        <Policy>RF.failedAuth</Policy>
+        <Policy>RaiseFault.badRequest</Policy>
+        <Policy>RaiseFaultprocessing</Policy>
+        <Policy>SC.initiateAuth</Policy>
+        <Policy>SCgetAccount</Policy>
+        <Policy>SCmapNIDtoScanID</Policy>
+        <Policy>SCverifyLogin</Policy>
+        <Policy>add-cors</Policy>
+        <Policy>checkTID</Policy>
+        <Policy>gimmeNonce</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources>
+        <Resource>jsc://checkTID.js</Resource>
+        <Resource>jsc://gimmeNonce.js</Resource>
+    </Resources>
+    <Spec></Spec>
+    <TargetServers/>
+    <TargetEndpoints/>
+</APIProxy>

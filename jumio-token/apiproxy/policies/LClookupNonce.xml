@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<LookupCache async="false" continueOnError="false" enabled="true" name="LClookupNonce">
+    <DisplayName>LC.lookupNonce</DisplayName>
+    <Properties/>
+    <CacheKey>
+        <KeyFragment ref="tid"/>
+    </CacheKey>
+    <CacheResource>jumio</CacheResource>
+    <Scope>Exclusive</Scope>
+    <AssignTo>nonce</AssignTo>
+</LookupCache>

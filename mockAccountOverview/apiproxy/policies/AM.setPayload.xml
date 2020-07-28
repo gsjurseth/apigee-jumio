@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage async="false" continueOnError="false" enabled="true" name="AM.setPayload">
+    <DisplayName>AM.setPayload</DisplayName>
+    <Properties/>
+    <Set>
+        <Payload contentType="application/json">
+            \{ "account_number": {jwt.VerifyJWT.claim.accountno}, "balance": 4151, "currency": "BHD" }
+        </Payload>
+    </Set>
+</AssignMessage>

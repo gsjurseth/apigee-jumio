@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage async="false" continueOnError="false" enabled="true" name="AM.returnToken">
+    <DisplayName>AM.returnToken</DisplayName>
+    <Properties/>
+    <Set>
+        <Payload contentType="application/json">\{ "token": "{output-jwt}" }</Payload>
+    </Set>
+</AssignMessage>
